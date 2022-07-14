@@ -1,0 +1,27 @@
+Earlier what used to happen backend developer ---> write api documentation in form of Excel Sheets.
+
+What is Api Documentation?
+**************************
+It is file or document prepared by backend developer which contains all the features routes, and there use case.
+
+Who uses it?
+***************
+Any one who is using your api as service, they will be using this documentation.
+
+Older Conventions:-
+*******************
+today or earlier people used to make api documentation using excel sheets or google sheets or text files.
+
+Lates Conventions:-
+*******************
+using swagger  and swagger Ui.
+
+What is Swagger?
+*******************
+it is tools which give a better way to organise you api docs and also you can test, your api, without postman directly in the Browser. without knowing the backend.
+
+We can builder swagger api, automatically by using few lines only.
+OpenApi 3 standard Api Build.
+swagger Open Api 3. Version
+
+
