@@ -1,0 +1,246 @@
+Date : 26-05-2022
+***********************
+1. Restapi : node 
+2. express package
+3. api testing tool : postman or thunderclient
+
+REST API : Request from client to server
+client : thunderclient
+client : postman
+
+if no main file present : it will create file with name : index.js
+if any file is present it will create with that name:
+
+Server (server.js) http://localhost:3000
+
+steps
+1. create a package.json file
+npm init -y
+2. Add dependecies of express.js
+3. npm install or npm install express
+4. Live server : Third Party Application this should be node Js
+5. nodemon is live server for nodeJs
+6. Express Module Middleware Use
+
+nodemon : 
+locally install, path = './node_modules/nodemon/bin/nodemon.bat'
+
+1. How to fix this 
+    1. install nodemon globally
+       npm install install --global nodemon
+    
+    2. create-react-app application --> executable ---> npx 
+    nodemon application ---> node environment ---> npx
+
+    3. npm start 
+        package.json 
+            {
+                scripts:{
+                    "start":"node server.js"
+                }
+            }
+
+            npm start will start executing.
+
+
+"main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server.js"
+  },
+
+Run this script if you want to execute the nodemon, for build.
+
+How to create the EndPoint and Resource
+1. Node Js Application we only Api these are api will be restapi`s
+2. Every Rest api will have the Unique Base URL
+
+baseurl = http://localhost:3000/
+or 
+domain name:-
+baseurl = http://xyz.com:3000/
+Resource : student 
+baseurl = http://xyz.com:3000/resource/<event-or-method>
+
+You want to create the interformation of student
+Student Add :-
+Restapi Add ---> Post Api
+
+app.post('/add',function(){
+
+});
+
+
+http://xyz.com:3000/student/add ---> Routes
+http://xyz.com:3000/student/info ---> Routes
+
+app.get('/info',function(){
+
+});
+
+We know How to create, rest-api we need mongodb 
+here we have two products of mongodb
+1.  local : mongodb compass
+2.  atlas : cloud server
+
+cloud server connection we need to create the clustor.
+when create connection we 
+need username,password, dbname, hostname
+
+mongobdb gives you, connection string with, with all these values.
+connect using clustor ---> connect ---> collection
+
+
+mongodb+srv://awnishmmg:awi900mmg%40%3D-@merndemo.2woh69f.mongodb.net/?retryWrites=true&w=majority
+SCRAM  : salted challenge response authentication mechanism.
+
+mongobdb connection serveless 
+Mechanism : stateless 
+state : error state : error connection
+connected state : connection establised.
+
+Note if you have some special character in password in you have encode the password.
+https://www.url-encode-decode.com/
+
+Inorder to work with the Api we can sent two types of data from client
+1. raw (Json)
+2. key and values (Parameter or Query String)
+
+To read the data, from the body we need body parser.
+step to work with body-parser
+1. package.json Add dependecies 
+  body-parser
+2. config.json => .env in future.
+   {
+    "parserOptions":{
+      "extended":false
+    }
+   }
+3. we have use app.use Middleware for adding
+1. disable urlencoded:false
+2. allow body parser to enable json value.
+
+How to handle Restapi with NodeJs using Error Handling
+****************************************************
+Request if resource does not exist then it is should give error 
+rather calling the default api.
+
+app.use((request,response,next)=>{
+    res.status(500).json({
+      "code":201,
+      "status":false,
+      "message":"Invalid Request Send"
+    });
+});
+
+Using .env file, it is environment based file where is Indepedent of Os. and Technology
+.env is used in php,django,ruby,mern also.
+
+How it works 
+node repl => environment Variable process.env 
+it stores the path varaible inside the process.env
+
+1. make a file .env
+2. add a package dotenv in package.json 
+npm install dotenv
+
+require("dotenv").config();
+.env file code 
+*********************
+VARIABLENAME=ANYVALUE => npm read {VARIABLENAME:'ANYVALUE'}
+# used as comment 
+Blank Lines Ignore
+
+.env we store all types confiuration like port setting,
+usercredential etc etc.
+all senstive interformation are stored here.
+
+Note :: when we will upload this code in github, we will not .env why?
+our secret password will be stolen be stolen by hacker if, our repo public.
+ delete .env and use static port.
+
+ const PORT = process.env.PORT || 3000; 
+
+More information:-
+
+1. mern : e => express
+2. mevn : v => view => e => express
+3. mfxn : Fastify. 
+4. mexn : mongodb express x(angular,vue,react,typscript,graphQL,DinoJs)
+
+NodeJs Framework 
+1. express
+2. Fastify
+3. koa
+4. HAPi
+5. Fastapi
+6. AdonisJS
+
+How to create schema for the, table.
+
+How to check if record in inserted or not?
+******************************************
+{
+  "message": "record Inserted Successfully",
+  "data": {
+    "_id": "62b9edb85ce3dcaa598e147f",
+    "name": "Awnish Kumar",
+    "email": "awnish@gmail.com",
+    "phone": "7373737373",
+    "gender": "male",
+    "__v": 0
+  }
+}
+
+How to work with delete request and put and patch request.
+*************************************************************
+{
+  "message": "record Inserted Successfully",
+  "data": {
+    "_id": "62c4737ec8b701f1d8b8cfc9",
+    "name": "Anil Kumar Soni",
+    "email": "anil.soni@gmail.com",
+    "phone": "8299292929",
+    "gender": "male",
+    "__v": 0
+  }
+}
+
+
+
+Update we have put and patch request
+put => update all field
+patch => update one or more field.
+
+eg: change profile example put
+eg : change password : patch.
+
+
+put :
+id : record find
+data replace.
+
+findOneAndUpdate()
+findOneAndDelete()
+findById()
+findByIdAndUpdate()
+findByIdAndDelete()
+findByIdAndRemove()
+
+
+{
+  "message": "record Inserted Successfully",
+  "data": {
+    "_id": "62c47842e05283f749d05e31",
+    "name": "vikas jindal",
+    "email": "vikas@jindal.com",
+    "phone": "727272727272",
+    "gender": "male",
+    "__v": 0
+  }
+}
+
+1.Swagger documentataion of Api 
+2.Fastify
+3.Image Uploading single and multiple using multer and cloudinary.
+4.Jwt Token

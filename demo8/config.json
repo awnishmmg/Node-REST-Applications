@@ -1,0 +1,6 @@
+{
+    "connection":"mongodb+srv://awnishmmg:awi900mmg@cluster0.n2qaf.mongodb.net/?retryWrites=true&w=majority",
+    "parserOptions":{
+        "extended":false
+      }
+}
