@@ -25,3 +25,38 @@ OpenApi 3 standard Api Build.
 swagger Open Api 3. Version
 
 
+To Build Swagger Ui we have different ways
+1. Using Annotations and comments
+2. yaml (Y`another Markup Langauge)
+3. Using Json	Swagger.json
+	{
+		"name":"Awnish Kumar"
+		"class" :"MBA"
+		"info" : {
+				"url":"https://github.com/awnishmmg",
+				"version":1.0
+				"license":"MIT"
+			}
+	}
+
+	Swagger.yaml
+	In Yaml 
+	**********
+	name :Awnish Kumar
+	class : MBA
+	info :
+		url : https://github.com/awnishmmg
+		version :1.0
+		license :MIT	
+
+.JSON OR .Yaml these are called Swagger Docs.
+
+In order to prepare the swagger you can use OpenApi
+or editor.swagger.io
+
+
+
+
+
+
+
