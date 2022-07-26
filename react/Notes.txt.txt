@@ -1,0 +1,73 @@
+Starting with reacts
+**********************
+1. build small small projects.
+2. coding challenges.
+3. Interview Questions.
+
+
+Quick Recap Introduction to React
+***********************************
+
+1. React is most powerful front end Javascript Library.
+2. it not a framework
+3. it works on core concept of Javascript
+
+Django is a Framework.
+Laravel is a Framework.
+Express is a Framework.
+Angular is a Framework.
+
+JQuery is a library
+PHP is core Library for making Dynamic Web Pages.
+ReactJs is also a Core library.
+
+
+core is more powerful than, a framework
+framework ---> top level of the core.
+
+Fun Facts of the React-Js
+***************************
+1. Released in 2013
+2. created by facebook community
+3. facebook employee Jordan walker he invented react-js
+4. github repo source code 100k+ stars/likes
+5. its community for developers are high.
+   if you are stuck in a problem, you wont will be first person to get this error,
+   rather you would get solution for this Questions.
+
+
+ Apps Scope
+ *************
+ 1000s of Application are already made.
+ 1. web-based
+ 2. mobile based (React-native)
+
+Lets Build our First App.
+**************************
+1. using Boyler Plate code : create-react-app | Code Skeleton 
+2. using cdn links
+
+How to work with cdn library in react App
+******************************************
+1. react.js
+2. reactDom.Js
+3. babel.js => Converts the Vanilla (pure Js) to Ecma Scripts.
+
+
+This type of sytax is called JSX : Javascript and Xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
